@@ -135,7 +135,7 @@ MODEL_CATEGORICAL_MAX_THROTTLE_RANGE = 0.5
 SEQUENCE_LENGTH = 3             #some models use a number of images over time. This controls how many.
 
 #IMU
-HAVE_IMU = False                #when true, this add a Mpu6050 part and records the data. Can be used with a 
+HAVE_IMU = False                #when true, this add a Mpu6050 part and records the data. Can be used with a
 
 #SOMBRERO
 HAVE_SOMBRERO = False           #set to true when using the sombrero hat from the Donkeycar store. This will enable pwm on the hat.
@@ -149,7 +149,7 @@ LED_INVERT = False              #COMMON ANODE? Some RGB LED use common anode. li
 
 #LED board pin number for pwm outputs
 #These are physical pinouts. See: https://www.raspberrypi-spy.co.uk/2012/06/simple-guide-to-the-rpi-gpio-header-and-pins/
-LED_PIN_R = 12      
+LED_PIN_R = 12
 LED_PIN_G = 10
 LED_PIN_B = 16
 
@@ -228,3 +228,6 @@ PID_D = -0.2                        # differential mult for PID path follower
 PID_THROTTLE = 0.2                  # constant throttle value during path following
 SAVE_PATH_BTN = "cross"             # joystick button to save path
 RESET_ORIGIN_BTN = "triangle"       # joystick button to press to move car back to origin
+
+#RoboHAT MM1
+ACTUATOR_MODE = "serial"
