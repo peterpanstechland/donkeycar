@@ -154,7 +154,7 @@ Choose <Finish> and hit enter.
 ## Step 8: Install Dependencies
 
 ```bash
-sudo apt-get install build-essential python3 python3-dev python3-virtualenv python3-numpy python3-picamera python3-pandas python3-rpi.gpio i2c-tools avahi-utils joystick libopenjp2-7-dev libtiff5-dev gfortran libatlas-base-dev libopenblas-dev libhdf5-serial-dev git
+sudo apt-get install build-essential python3 python3-dev python3-pip python3-virtualenv python3-numpy python3-picamera python3-pandas python3-rpi.gpio i2c-tools avahi-utils joystick libopenjp2-7-dev libtiff5-dev gfortran libatlas-base-dev libopenblas-dev libhdf5-serial-dev git
 ```
 
 ## Step 9: Install Optional OpenCV Dependencies
@@ -205,6 +205,12 @@ Warnings like this are normal:
   return f(*args, **kwds)
 /home/pi/env/lib/python3.5/importlib/_bootstrap.py:222: RuntimeWarning: builtins.type size changed, may indicate binary incompatibility. Expected 432, got 412
   return f(*args, **kwds)
+```
+
+Note: If you would like to try tflite support, you will need a newer version of Tensorflow. You can download and install this version:
+```bash
+wget https://tawn-train.s3.amazonaws.com/tf/tensorflow-2.0.0a0-cp35-cp35m-linux_armv7l.whl
+pip install tensorflow-2.0.0a0-cp35-cp35m-linux_armv7l.whl
 ```
 
 ##  Step 12: Install Optional OpenCV
