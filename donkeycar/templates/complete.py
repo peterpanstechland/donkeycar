@@ -294,11 +294,8 @@ def drive(cfg, model_path=None, use_joystick=False, model_type=None, camera_type
         except:
             pass
 
-<<<<<<< HEAD
-        inputs = ['cam/image_array', "behavior/one_hot_state_array"]
-=======
         inputs = [inf_input, "behavior/one_hot_state_array"]
->>>>>>> master
+
     #IMU
     elif model_type == "imu":
         assert(cfg.HAVE_IMU)
