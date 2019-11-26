@@ -20,6 +20,10 @@ class SerialController:
 
 
     def update(self):
+        # delay on startup to avoid crashing
+        print("Warming Serial Controller")
+        time.sleep(3)
+
         while True:
             line = str(self.serial.readline().decode()).strip('\n').strip('\r')
             output = line.split(", ")
